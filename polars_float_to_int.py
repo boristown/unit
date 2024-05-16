@@ -1,7 +1,7 @@
 import polars as pl
 import numpy as np
 
-class ploars_float_to_int:
+class polars_float_to_int:
     def convertAuto(df:pl.DataFrame, col:str)->pl.DataFrame:
         min_v = df[col].min()
         max_v = df[col].max()
@@ -33,5 +33,5 @@ if __name__ == "__main__":
         "b": [1, 2, 3, 4, None],
         "c": ["a", "b", "c", "d", "e"]
         })
-    print(ploars_float_to_int.convertAuto(df, "a"))
-    print(ploars_float_to_int.convertAuto(df, "b"))
+    print(polars_float_to_int.convertAuto(df, "a"))
+    print(polars_float_to_int.convertAuto(df, "b"))
